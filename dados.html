@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA2L2pvYjk2Ni0yMjEtcC5wbmc.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+
+<body onload="criar(),mostrar();">
+    <div>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+              <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA2L2pvYjk2Ni0yMjEtcC5wbmc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              Anom Bitcoin Exchange
+            </a>
+            <a href="manifest.html"><button  class="btn btn-outline-dark" id="manifesto">Manifesto Bitcoin</button></a>
+            <a href="login.html"><button  class="btn btn-outline-dark" id="sair">Sair da Conta</button></a>
+        </nav>
+    </div>
+    
+    <div id="interior">
+        <div id="dados" class="cente">
+            <h1 class="cente">Dados do Cliente</h1>
+            <h4 id="saldo"></h4>
+            <h4 id="cliente"></h4>
+        </div>
+
+        <div>
+            <h2 class="cente">Transações</h2>
+            <div id="local">
+                <div id="tranx">
+                    <div id="um">
+                        <p>Saque:</p>
+                        <input type="number" id="valor_saque">
+                        <br><br>
+                        <button id="saque" onclick="saque()"  class="btn btn-outline-dark">Sacar</button>
+                        
+                    </div>
+                    
+                    <br>
+                    <p>Depósito:</p>
+                    <input type="number" id="valor_deposito">
+                    <br><br>
+                    <button id="deposito" onclick="deposito()"  class="btn btn-outline-dark">Depositar</button>
+
+                </div>
+                <h3 class="cente">Transferência</h3>
+                <div id="transfe">
+                    <br>
+                    
+                    <p>Chave Destino:</p>
+                    <input type="text" id="destino">
+                    <div id="valor">
+                        <p>Valor:</p>
+                        <input type="number" id="valor_trans">
+                        <br><br>
+                        <button id="trans" onclick="transfere()"  class="btn btn-outline-dark" >Transferir</button>
+        
+                    </div>
+                
+
+                
+
+            </div>
+        
+        
+        
+        </div>
+        <br><br>
+    </div>
+    
+
+    <script src="js/magica_login.js"></script>
+    <script src="js/magica_dados.js"></script>
+</body>
+</html>
